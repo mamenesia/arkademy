@@ -28,8 +28,8 @@
             <td><%= item.work %></td>
             <td><%= item.salary %></td>
             <td>
-              <a href="/delete" onclick="return confirm('Are you sure to delete this data ?')"><i class="far fa-trash-alt text-danger m-2"></i></a>
-              <a href="/edit"><i class="far fa-edit text-success"></i></a>
+              <a href="/delete?id=<%= item.id %>" onclick="return confirm('Are you sure to delete this data ?')"><i class="far fa-trash-alt text-danger m-2"></i></a>
+              <a href="/edit?id=<%= item.id %>"><i class="far fa-edit text-success"></i></a>
             </td>
           </tr>
           <% }); %>
