@@ -62,4 +62,31 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
   Buatlah sebuah function memiliki sebuah parameter berupa array yang berisi array yang berisi abjad, yang mempunyai tugas untuk mengurutkan array terpendek ke terpanjang, dan juga mengurutkan abjad di dalamnya dari a ke z. Dilarang menggunakan built in function array_multisort
   misalnya:
 
-  ![hasil sort_array()](https://github.com/mamenesia/arkademy/blob/master/ss1.png)
+  ![hasil sort_array()](https://github.com/mamenesia/arkademy/blob/master/ss2.png)
+
+      const sort_array = (data) => {
+          for(let i = 0; i < data.length; i++){
+            data[i].sort((a, b) => {
+              if(a > b){ return 1;}
+              else if(a < b) { return -1; }
+              else { return 0; }
+            });
+          }
+
+          return data.sort((a, b) => a.length - b.length );
+      };
+
+      var data = [
+        ['a','c','b','e','d'],
+        ['g','e','f']
+        ];
+
+        console.log(sort_array(data));
+        
+        var datalain = [
+          ['g','h','i','j'],
+      ['a','c','b','e','d'],
+      ['g','e','f']
+      ];
+
+      console.log(sort_array(datalain));
