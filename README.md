@@ -137,11 +137,11 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
   Untuk menjalankan programnya, ketik "npx nodemon" pada console.
 
   Berikut Screenshoot program yang telah dibuat :
-  * Tampilan Home
+  Tampilan Home
   ![tampilan home](ttps://github.com/mamenesia/arkademy/blob/master/ss3.png)
 
-  * Tampilan ADD Name / Edit
+  Tampilan ADD Name / Edit
   ![tampilan add](ttps://github.com/mamenesia/arkademy/blob/master/ss4.png)
 
-  * Tampilan DELETE
+  Tampilan DELETE
   ![tampilan delete](ttps://github.com/mamenesia/arkademy/blob/master/ss5.png)
