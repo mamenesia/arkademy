@@ -95,7 +95,7 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
   ### Penyelesaian Soal No. 6 ada di folder soal6
   [Penyelesaian Soal No. 6](https://github.com/mamenesia/arkademy/tree/master/soal6)
 
-  * Penyelesaian Soal 6A dapat di temukan di file 'No 6A.txt'
+  Penyelesaian Soal 6A dapat di temukan di file 'No 6A.txt'
   [file No 6A.txt](https://github.com/mamenesia/arkademy/blob/master/soal6/No%206A.txt)
 
       mysql -u root -p
