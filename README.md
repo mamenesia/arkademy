@@ -90,3 +90,45 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
       ];
 
       console.log(sort_array(datalain));
+
+  ## Soal No. 6
+  ### Penyelesaian Soal No. 6 ada di folder soal6
+  [Penyelesaian Soal No. 6](https://github.com/mamenesia/arkademy/tree/master/soal6)
+
+  * Penyelesaian Soal 6A dapat di temukan di file 'No 6A.txt'
+  [file No 6A.txt](https://github.com/mamenesia/arkademy/blob/master/soal6/No%206A.txt)
+
+    mysql -u root -p
+    CREATE DATABASE arkademy;
+
+    CREATE TABLE category(
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      salary VARCHAR(100)
+    );
+
+    CREATE TABLE work(
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      work VARCHAR(100),
+      id_salary INT,
+      FOREIGN KEY (id_salary) REFERENCES category(id)
+    );
+
+    CREATE TABLE name(
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(100),
+      id_work INT,
+      id_salary INT,
+      FOREIGN KEY (id_work) REFERENCES work(id),
+      FOREIGN KEY (id_salary) REFERENCES category(id)
+    );
+
+    INSERT INTO category(salary) VALUES ('10.000.000');
+    INSERT INTO category(salary) VALUES ('12.000.000');
+
+    INSERT INTO work(work, id_salary) VALUES ('Frontend Dev', 1);
+    INSERT INTO work(work, id_salary) VALUES ('Backend Dev', 2);
+
+    INSERT INTO name(name, id_work, id_salary) VALUES ('Rebecca', 1, 1);
+    INSERT INTO name(name, id_work, id_salary) VALUES ('Vita', 2, 2);
+
+    SELECT name.name, work.work, category.salary FROM name, work, category WHERE name.id_work=work.id AND name.id_salary=category.id;
