@@ -21,4 +21,27 @@
 ## Soal No. 3
   Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebuah parameter sebagai panjang lebar/tinggi gambar. Parameter harus merupakan bilangan ganjil:
 
-  [gambar cetak_gambar(5)]()
+  [gambar cetak_gambar(5)](https://github.com/mamenesia/arkademy/blob/master/ss1.png)
+
+      const cetak_gambar = (n) => {
+          if(n%2 === 0){
+              console.log("ERROR!!! Input Number Must Be An Odd Number!");
+          } else {
+              for(let row=0; row < n; row++){
+                  let lines = "";
+
+                  for(let col=0; col<n;col++){
+                      if(col === 0 || col === n-1){
+                          lines += '*';
+                      } else if(row === Math.floor(n/2)){
+                          lines += '*';
+                      } else {
+                          lines += '=';
+                      }
+                  }
+                  console.log(lines)
+              }
+          }
+      };
+
+      cetak_gambar(5);
