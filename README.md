@@ -21,7 +21,7 @@
 ## Soal No. 3
   Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebuah parameter sebagai panjang lebar/tinggi gambar. Parameter harus merupakan bilangan ganjil:
 
-  [gambar cetak_gambar(5)](https://github.com/mamenesia/arkademy/blob/master/ss1.png)
+  ![gambar cetak_gambar(5)](https://github.com/mamenesia/arkademy/blob/master/ss1.png)
 
       const cetak_gambar = (n) => {
           if(n%2 === 0){
@@ -45,3 +45,15 @@
       };
 
       cetak_gambar(5);
+
+  ## Soal No. 4
+    Buatlah fungsi yang mempunyai sebuah parameter yang bekerja untuk menghitung jumlah huruf hidup pada sebuah string.
+
+        const count_vowels = (str) => {
+        const vowels = str.match(/[aiueo]/gi);
+        
+        return vowels ? vowels.length : 0 ;
+        };
+
+        console.log(count_vowels('programmer'));
+        console.log(count_vowels('hmm'));
