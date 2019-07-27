@@ -132,3 +132,16 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
       INSERT INTO name(name, id_work, id_salary) VALUES ('Vita', 2, 2);
 
       SELECT name.name, work.work, category.salary FROM name, work, category WHERE name.id_work=work.id AND name.id_salary=category.id;
+
+  Penyelesaian Soal 6B&6C dikerjakan menggunakan nodejs, expressjs, ejs, mysql dan nodemon.
+  Untuk menjalankan programnya, ketik "npx nodemon" pada console.
+
+  Berikut Screenshoot program yang telah dibuat :
+  * Tampilan Home
+  ![tampilan home](ttps://github.com/mamenesia/arkademy/blob/master/ss3.png)
+
+  * Tampilan ADD Name / Edit
+  ![tampilan add](ttps://github.com/mamenesia/arkademy/blob/master/ss4.png)
+
+  * Tampilan DELETE
+  ![tampilan delete](ttps://github.com/mamenesia/arkademy/blob/master/ss5.png)
