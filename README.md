@@ -138,11 +138,11 @@ Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebua
 
   Berikut Screenshoot program yang telah dibuat :
   
-  Tampilan Home
-  [tampilan home](https://github.com/mamenesia/arkademy/blob/master/ss3.png)
+  Tampilan HOME
+  ![tampilan home](https://github.com/mamenesia/arkademy/blob/master/ss3.png)
 
-  Tampilan ADD Name / Edit
-  [tampilan add](https://github.com/mamenesia/arkademy/blob/master/ss4.png)
+  Tampilan ADD / EDIT
+  ![tampilan add](https://github.com/mamenesia/arkademy/blob/master/ss4.png)
 
   Tampilan DELETE
-  [tampilan delete](https://github.com/mamenesia/arkademy/blob/master/ss5.png)
+  ![tampilan delete](https://github.com/mamenesia/arkademy/blob/master/ss5.png)
