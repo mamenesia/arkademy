@@ -96,6 +96,7 @@ const myBiodata = () => {
                         }
                     ],
         "interest_in_coding" : true
-        
     }
 };
+
+console.log(myBiodata());
