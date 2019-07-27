@@ -48,6 +48,7 @@
 
   ## Soal No. 4
     Buatlah fungsi yang mempunyai sebuah parameter yang bekerja untuk menghitung jumlah huruf hidup pada sebuah string.
+    
 
         const count_vowels = (str) => {
         const vowels = str.match(/[aiueo]/gi);
