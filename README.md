@@ -10,3 +10,15 @@
 
     console.log(is_username_valid('Xrutaf888'));
     console.log(is_username_valid('1Diana'));
+
+  Format password: merupakan kombinasi dari huruf kecil, huruf besar minimal satu karakter, angka minimal satu karakter, dan karakter spesial minimal satu karakter dan harus memiliki karakter simbol “=”  dan panjang minimal 8 karakter.
+
+    const is_password_valid = (password) =>  /(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[\W|_])(?=.*[=]).{8,}$/.test(password);
+
+    console.log(is_password_valid('passW0rd='));
+    console.log(is_password_valid('C0d3YourFuture!#'));
+
+## Soal No. 3
+  Buatlah function untuk mencetak gambar seperti dibawah ini, yang mempunyai sebuah parameter sebagai panjang lebar/tinggi gambar. Parameter harus merupakan bilangan ganjil:
+
+  [gambar cetak_gambar(5)]()
